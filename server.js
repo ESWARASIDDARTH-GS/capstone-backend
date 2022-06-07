@@ -55,4 +55,4 @@ app.get('/', function(req, res) {
     addData(req.body,res)
   });
 
-  app.listen(5000)
+  app.listen(process.env.PORT || 5000)
