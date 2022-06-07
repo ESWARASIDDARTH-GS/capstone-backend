@@ -46,6 +46,11 @@ app.get('/:name', function(req, res) {
     getData(req.name,res)
   });
 
+  
+app.get('/', function(req, res) {
+    res.send("Server running")
+  });
+
   app.post('/:name', function(req, res) {
     addData(req.body,res)
   });
